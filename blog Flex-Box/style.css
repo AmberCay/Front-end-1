@@ -32,7 +32,7 @@ video {
 
 nav {
     width: 100vw;
-    min-height: 2rem;
+    min-height: 2.6rem;
     background-color: black;
     color: white;
     display: flex;
@@ -69,6 +69,20 @@ p {
     margin-block: 1rem;
 }
 
-img {
+.container img {
     height: 560px;
+}
+
+.galeria {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: flex-start;
+    align-content: stretch;
+}
+
+.gallery-img {
+    width: 30%;
+    height: 400px;
 }
