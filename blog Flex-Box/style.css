@@ -44,7 +44,9 @@ nav {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
 }
 
 .container {
@@ -53,11 +55,21 @@ main {
     justify-content: space-around;
     align-items: flex-start;
     padding: 1rem;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
 }
 
 article {
     max-width: 60%;
+}
+
+#blog-article {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
 }
 
 h1 {
@@ -67,10 +79,12 @@ h1 {
 
 p {
     margin-block: 1rem;
+    align-self: center;
 }
 
 .container img {
     height: 560px;
+    max-width: 50%;
 }
 
 .galeria {
