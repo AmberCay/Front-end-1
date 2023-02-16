@@ -1,0 +1,204 @@
+:root {
+    --main-blue-400: #0000ff;
+    --main-blue-100: #5f94ff;
+    --main-white-900: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+    background-color: var(--main-blue-400);
+}
+
+nav {
+    height: 12vh;
+    width: 100vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 81%, rgba(0,0,255,0.9) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-menu {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    transition: font-size 800ms,
+                color 500ms;
+}
+
+.nav-menu a:hover {
+    font-size: 1.2rem;
+    color: var(--main-blue-400);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 88vh;
+    background-image: url("https://www.codenotch.com/wp-content/uploads/2021/09/Web-portada-3.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    width: 90%;
+    color: var(--main-white-900);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+}
+
+.photo {
+    height: 32rem;
+    width: 32rem;
+    border-radius:34% 66% 65% 35% / 49% 74% 26% 51% ;
+    object-fit: cover;
+    object-position: 5px;
+    opacity: 0.9;
+}
+
+h3 {
+    font-size: 1.8rem
+}
+
+h1 {
+    font-size: 4rem
+}
+
+h4 {
+    font-size: 1.4rem
+}
+
+article {
+    width: 50%;
+    min-height: 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 1rem;
+    background: none;
+}
+
+span {
+    transition: font-size 1s;
+}
+
+span:hover {
+    font-size: 4.8rem;
+}
+
+span a {
+    color: #11f294;
+    text-decoration: none;
+}
+
+.contact-main {
+    position: relative;
+    width: 100vw;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+form {
+    display: flex;
+    height: 50%;
+    width: 40%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: var(--main-white-900);
+}
+ form h1 {
+    padding-bottom: 2rem;
+ }
+.form-input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--main-blue-100);
+    color: var(--main-white-900);
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background: none;
+    text-decoration: none; 
+}
+
+.contact-main img {
+    width: 32rem;
+    height: 32rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid var(--main-blue-100);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0px;
+}
+
+.card {
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: 3rem;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: #fff;
+}
