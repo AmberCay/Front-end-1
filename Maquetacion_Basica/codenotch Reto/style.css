@@ -143,16 +143,6 @@ span a {
     text-decoration: none;
 }
 
-.contact-main {
-    position: relative;
-    width: 100vw;
-    height: 88vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
-}
-
 form {
     display: flex;
     height: 50%;
@@ -162,9 +152,11 @@ form {
     justify-content: space-between;
     color: var(--main-white-900);
 }
- form h1 {
+
+form h1 {
     padding-bottom: 2rem;
- }
+}
+
 .form-input {
     width: 100%;
     border: none;
@@ -177,28 +169,83 @@ form {
     text-decoration: none; 
 }
 
-.contact-main img {
-    width: 32rem;
-    height: 32rem;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 6px solid var(--main-blue-100);
+.contacts-main {
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    gap: 2rem;
-    margin: 4rem 5vw;
-    padding: 0px;
+    width: 90%;
+    height: 32rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .card {
     position: relative;
-    display: block;
-    height: 100%;
-    border-radius: 3rem;
+    height: 28rem;
+    width: 22rem;
+    border-radius: 2.2rem;
     overflow: hidden;
-    text-decoration: none;
-    background-color: #fff;
 }
+
+.card-image {
+    height: 28rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: 2.2rem;    
+    background-color: var(--main-white-900);      
+    transform: translateY(100%);
+    transition: .4s ease-in-out;
+}
+
+.card:hover .card-overlay {
+    transform: translateY(0);
+}
+
+.card-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: 2.2rem;    
+    background-color: var(--main-white-900);
+    transform: translateY(-100%);
+    transition: .4s ease-in-out;
+}
+
+.card:hover .card-header {
+    transform: translateY(0);
+}
+
+.card-title {
+    margin: 0 0 1rem;
+    color: var(--main-blue-400);
+}
+
+.card-profession {
+    color: var(--main-blue-100);
+}
+
+.card-description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #675a61;  
+    overflow: hidden;
+}    
