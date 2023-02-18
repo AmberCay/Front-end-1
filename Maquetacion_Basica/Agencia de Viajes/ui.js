@@ -23,6 +23,8 @@ function savePerson(){
         addPersonToJSON(name, origin, destinations, nPersons, date)
 }
 
+let main = document.querySelector('main');
+
 function filterDestination() {
     let personasADestion = []
     for (const person of personList) {
@@ -30,9 +32,9 @@ function filterDestination() {
             personasADestion.push(person)
         }
     }
-    console.log(personasADestion);
+    let personScreen = JSON.stringify(personasADestion);
+    main.innerHTML += `<p>Hello:${personScreen}</p>`;
 }
 
 let info = document.getElementById('info');
 let filtro = document.getElementById('filter')
-let main = document.querySelector('main')
