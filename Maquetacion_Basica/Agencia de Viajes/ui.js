@@ -23,7 +23,7 @@ function savePerson(){
         addPersonToJSON(name, origin, destinations, nPersons, date)
 }
 
-let main = document.querySelector('main');
+let form = document.getElementById('form-area')
 
 function filterDestination() {
     let personasADestion = []
@@ -33,7 +33,9 @@ function filterDestination() {
         }
     }
     let personScreen = JSON.stringify(personasADestion);
-    main.innerHTML += `<p>Hello:${personScreen}</p>`;
+    let onScreen = document.createElement('div')
+    onScreen.innerHTML += personScreen;
+    form.appendChild(onScreen)
 }
 
 let info = document.getElementById('info');
