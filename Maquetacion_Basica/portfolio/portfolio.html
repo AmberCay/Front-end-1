@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hanken+Grotesk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gajraj+One&family=Hanken+Grotesk&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Amber</title>
 </head>
@@ -16,28 +16,28 @@
             <h4>AC</h4>
         </div>
         <div class="nav-options">
-            <a href="">P</a>
-            <a href="">L</a>
-            <a href="">A</a>
+            <a href="#about-me">About me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
     <main>
         <div class="hero">
-            <div class="hero-section"></div>
-            <div class="name-bubble">
+            <div class="hero-section">
+                <div class="name-bubble">
                 <div class="name-img"><h1>AMBER C</h1></div>
                 <h4><span>Global</span>  minded web dev</h4>
-            </div>
-            <div class="photo-orb">
-                <img src="./assets/Subject-removebg-preview.png" alt="">
+                </div>
+                <div class="photo-orb">
+                    <img src="./assets/Subject-removebg-preview.png" alt="">
+                </div>
             </div>
         </div>
-        <div class="about-me">
-            <div class="about-me-img">
-                <img src="" alt="">
+        <div class="about-me" id="about-me">
+            <div class="about-me-left">
+                <h2>About Me</h2>
             </div>
             <div class="about-me-content">
-                <h2>.aboutMe()</h2>
                 <h4>Who is this chick?</h4>
                 <div class="about-me-text">
                     <p>International relations grad turned web dev. I like design, coding, history and photography. Queer and trans, I bring a unique perspective to all my projects.
@@ -46,10 +46,18 @@
             </div>
         </div>
         <div class="tech">
+            <h2>Langs</h2>
+            <div class="tech-grid">
+                <div class="tech-card" style="background-image: url('https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y3NzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60');">Html</div>
+                <div class="tech-card" style="background-image: url('https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');">Css</div>
+                <div class="tech-card" style="background-image: url('https://images.unsplash.com/photo-1543966888-7c1dc482a810?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1206&q=80');">Javascript</div>
+                <div class="tech-card" style="background-image: url('https://images.unsplash.com/photo-1558009250-d3d2229fdf28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');">Typescript</div>
 
+            </div>
+            
         </div>
-        <div class="galery">
-            <h2>Mis projectos</h2>
+        <div class="galery" id="projects">
+            <h2>My projects</h2>
             <div class="project-grid">
                 <div class="grid-card card-wide"
                 style="background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1159&q=80');">
@@ -84,6 +92,14 @@
                 <a href="">Photography</a>
                 </div>
             </div>
+        </div>
+        <div class="form-area" id="contact">
+            <h2>Get in contact</h2>
+            <form>
+                <input class="text-box" type="text" placeholder="Name">
+                <input class="text-box" type="email" placeholder="Email Address">
+                <input class="button" type="submit" value="Subscribe">
+              </form>
         </div>
     </main>
 </body>

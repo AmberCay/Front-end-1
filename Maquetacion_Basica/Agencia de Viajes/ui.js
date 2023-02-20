@@ -23,14 +23,27 @@ function savePerson(){
         addPersonToJSON(name, origin, destinations, nPersons, date)
 }
 
+function printPeople(personasADestion) {
+    
+}
+
 function filterDestination() {
     let personasADestion = []
+
     for (const person of personList) {
         if (person.destination.toUpperCase() == ('CANARIAS' || 'GALICIA || MALLORCA')) {
             personasADestion.push(person)
         }
     }
-    console.log(personasADestion);
+    let logPersons = '';
+    for (let i = 0; i < personasADestion.length; i++) {
+        logPersons += `<ul>
+                        <li>Nombre: ${personasADestion[i].name}</li>
+                        <li>Origen: ${personasADestion[i].origin}</li>
+                        <li>Destino: ${personasADestion[i].destination}</li>
+                        <li>Numero de Personas: ${personasADestion[i].nPersons}</li>
+                        <li>Fecha: ${personasADestion[i].date}</li>`
+    }
 }
 
 let info = document.getElementById('info');
