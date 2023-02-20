@@ -23,7 +23,7 @@ function savePerson(){
         addPersonToJSON(name, origin, destinations, nPersons, date)
 }
 
-let form = document.getElementById('form-area')
+let form = document.getElementById('form')
 
 function printPeople(personasADestion) {
     
@@ -39,13 +39,14 @@ function filterDestination() {
     }
     let logPersons = '';
     for (let i = 0; i < personasADestion.length; i++) {
-        logPersons += `<ul>
+        logPersons += `<ul style="color: white;">
                         <li>Nombre: ${personasADestion[i].name}</li>
                         <li>Origen: ${personasADestion[i].origin}</li>
                         <li>Destino: ${personasADestion[i].destination}</li>
                         <li>Numero de Personas: ${personasADestion[i].nPersons}</li>
                         <li>Fecha: ${personasADestion[i].date}</li>`
     }
+    document.getElementById('form').innerHTML = logPersons
 }
 
 let info = document.getElementById('info');
