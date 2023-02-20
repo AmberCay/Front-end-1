@@ -23,6 +23,8 @@ function savePerson(){
         addPersonToJSON(name, origin, destinations, nPersons, date)
 }
 
+let form = document.getElementById('form-area')
+
 function printPeople(personasADestion) {
     
 }
@@ -48,4 +50,3 @@ function filterDestination() {
 
 let info = document.getElementById('info');
 let filtro = document.getElementById('filter')
-let main = document.querySelector('main')
