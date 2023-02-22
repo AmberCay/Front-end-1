@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 400px 300px 400px;
+    grid-template-rows: 300px 300px;
+}
+
+.grid * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.a {
+    background-color: lime;
+}
+
+.b {
+    background-color: orange;
+}
+
+.c {
+    background-color: maroon;
+}
+
+.d {
+    background-color: red;
+}
+
+.e {
+    background-color: blue;
+}
+
+.f {
+    background-color: yellow;
+}

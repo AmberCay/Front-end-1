@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "score"
+    "board";
+
+    height: 100vw;
+    background-color: aliceblue;
+}
+
+.scoreboard {
+    height: 10vh;
+    width: 88vw;
+    display: grid;
+    grid-area: score;
+    background-color: aquamarine;
+    grid-template-areas: 
+    "rounds players players reset";
+    padding-inline: 1rem;
+    gap: 1rem;
+}
+
+.round-counter {
+    grid-area: rounds;
+    background-color: bisque;
+}
+
+.player-area {
+    grid-area: players;
+    background-color: blue;
+    display: grid;
+    grid-template-areas: 
+    "scB scB scB scB"
+    "player1 player1 player2 player2"
+    "resetC resetC resetC resetC";
+}
+
+.reset {
+    grid-area: reset;
+    background-color: red;
+    border: none;
+}
+
+.board {
+    height: 90vh;
+    width: 88vw;
+    grid-area: board;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.scB {
+    height: 2.2rem;
+    background-color: black;
+    grid-area: scB;
+    color: white;
+}
+
+.player-area * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player1 {
+    height: 6rem;
+    grid-area: player1;
+    background-color: red;
+}
+
+.player2 {
+    height: 6rem;
+    grid-area: player2;
+    background-color: blue;
+}
+
+.player1 h3,
+.player2 h3 {
+    color: rgb(144, 205, 155);
+    font-size: 1rem;
+}
+
+.player1 h2,
+.player2 h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.rScores {
+    grid-area: resetC;
+    height: 2rem;
+    text-transform: uppercase;
+    background-color: lime;
+    border: none;
+}
+
+.square {
+    height: 6rem;
+    width: 6rem;
+    background-color: white;
+}

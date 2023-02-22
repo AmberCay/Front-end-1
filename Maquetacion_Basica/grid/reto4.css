@@ -1,0 +1,65 @@
+.grid {
+    width: 98vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "😶 😶 📷"
+    "⬅️ ➡️ ➡️"
+    "⬅️ ➡️ ➡️"
+    "⬅️ ➡️ ➡️"
+    "⬅️ ➡️ ➡️"
+    "🦶 🦶 🦶";
+}
+
+.grid * {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.head {
+    grid-area: 😶;
+    background-color: rgb(182, 27, 27);
+}
+
+.image {
+    grid-area: 📷;
+    background-color: brown;
+}
+
+.aside-area {
+    display: grid;
+    /* grid-template-areas:
+    "👆"
+    "👇"; */
+    grid-area: ⬅️;
+    background-color: orange;
+    gap: 8rem;
+}
+
+.aside-area * {
+    background-color: white;
+    color: orange;
+    height: 60%;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.content-area {
+    display: grid;
+    grid-area: ➡️;
+    background-color: red;
+    gap: 1rem;
+}
+
+.content-area * {
+    border: 2px solid white;
+    height: 80%;
+}
+
+footer {
+    grid-area: 🦶;
+    background-color: maroon;
+}
